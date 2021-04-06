@@ -18,6 +18,7 @@ pipeline {
         }
 	stage('fourth stage') {
 	    steps {
+		sh 'rm -rf gradleproject'
 		sh 'git clone https://github.com/phatinga/gradleproject.git'
 	    }
 	}
